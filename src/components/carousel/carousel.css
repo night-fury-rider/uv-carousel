@@ -1,0 +1,30 @@
+header {
+  font-size: larger;
+  font-weight: 700;
+  margin: 2rem 0 2rem 0;
+}
+
+.carousel-submit {
+  margin: 2rem 0 2rem 0;
+  display: block;
+  position: relative;
+}
+
+.carousel-container img {
+  display: block;
+}
+
+.carousel-container input {
+  margin-left: 2rem;
+}
+
+.carousel-container .carousel-direction {
+  margin-top: 2rem;
+}
+
+/*Add below class to parent element to align it's children centrally*/
+.uv-centered-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

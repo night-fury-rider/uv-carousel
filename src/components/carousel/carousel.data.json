@@ -1,0 +1,11 @@
+{
+  "title": "UV Carousel",
+  "image_alt": "Caraousel Image",
+  "height": "200px",
+  "width": "400px",
+  "forward": "Forward",
+  "reverse": "Reverse",
+  "duration": "Duration: ",
+  "direction": "Direction: ",
+  "submit": "Submit"
+}

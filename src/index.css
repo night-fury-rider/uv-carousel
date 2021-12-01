@@ -1,0 +1,45 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.medium-font {
+  font-family: "IBM Plex Serif", serif;
+}
+
+.text-center {
+  text-align: center;
+}
+.inlineElement {
+  display: inline-block;
+}
+.blockElement {
+  display: block;
+}
+.fullWidth {
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*Add below class to parent element to align it's children centrally*/
+.uv-centered-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
