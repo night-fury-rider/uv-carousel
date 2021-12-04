@@ -2,6 +2,9 @@
 
 This project focuses on building Carousel component in React. This project can be referred as prototype for using React Context API.
 
+![Screenshot (82)](https://user-images.githubusercontent.com/5191208/144704534-779b9eb6-000e-41b5-b320-493ad0131620.png)
+
+
 ## Technologies Used
 
 - React 17.0.2
