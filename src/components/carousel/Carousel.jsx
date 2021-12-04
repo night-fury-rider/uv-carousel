@@ -53,6 +53,27 @@ const Carousel = (props) => {
     });
   };
 
+  const changeSlide = (isForward) => {
+    setActiveIndex(activeIndex => {
+      if (isForward) {
+        return (activeIndex === props.images.length - 1) ? 0 : activeIndex + 1;
+      }
+      return activeIndex > 0 ? activeIndex - 1 : props.images.length - 1
+    });
+    setConfig({
+      direction: direction,
+      duration: duration
+    });
+  };
+
+  const loadPrevious = () => {
+    changeSlide();
+  };
+
+  const loadNext = () => {
+    changeSlide(true);
+  };
+
   return (
     <div className="carousel-container">
       <header>{cData.title}</header>
@@ -80,6 +101,7 @@ const Carousel = (props) => {
       </div>
 
       <div className="uv-centered-container">
+        <span onClick={loadPrevious} className="carousel-back-navigator carousel-navigator">{"<"}</span>
         {
           props.images.map((imagePath, index) => (
             <React.Fragment key={index}>
@@ -92,6 +114,7 @@ const Carousel = (props) => {
             </React.Fragment>
           ))
         }
+        <span onClick={loadNext} className="carousel-next-navigator carousel-navigator">{">"}</span>
       </div>
     </div>
   )

@@ -28,3 +28,25 @@ header {
   align-items: center;
   justify-content: center;
 }
+
+.carousel-navigator {
+  position: relative;
+  height: 200px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: 700;
+  font-family: sans-serif;
+  width: 50px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.carousel-back-navigator {
+  left: 50px;
+}
+
+.carousel-next-navigator {
+  right: 50px;
+}
